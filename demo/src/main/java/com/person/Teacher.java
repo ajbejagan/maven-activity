@@ -9,6 +9,11 @@ public class Teacher extends Person {
     this.degreeLevel = degreeLevel;
   }
 
+  public Teacher(String firstName, String lastName, int age, String degreeLevel) {
+    super(firstName, lastName, age);
+    this.degreeLevel = degreeLevel;
+  }
+
   public String getDegreeLevel() {
     return degreeLevel;
   }

@@ -30,8 +30,10 @@ public class Person {
     // Print → The person (first name last name) is currently in (current location)
     System.out.println(this.firstName + " " + this.lastName + " is currently in " + this.location);
     // Ask for input -> the location that the person wants to travel to
+    System.out.println("Enter target destination: ");
     String destination = sc.nextLine();
     // Ask for input -> Distance
+    System.out.println("Enter estimated distance from " + this.location + " to " + destination);
     double distance = sc.nextDouble();
     // Set the person’s location to the new location
     this.location = destination;

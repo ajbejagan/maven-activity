@@ -9,6 +9,14 @@ public class Vehicle {
   private double gasConsumption;
   private String vehicleName;
 
+  public Vehicle(int numberOfWheels, String engine, double gas, double gasConsumption, String vehicleName) {
+    this.numberOfWheels = numberOfWheels;
+    this.engine = engine;
+    this.gas = gas;
+    this.gasConsumption = gasConsumption;
+    this.vehicleName = vehicleName;
+  }
+
   public Vehicle(int numberOfWheels, String engine) {
     this.numberOfWheels = numberOfWheels;
     this.engine = engine;
