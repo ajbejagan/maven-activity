@@ -33,9 +33,9 @@ public final class App {
 
         Teacher budz = new Teacher("Budz", "Doy", 25, "Lahug", "Masters degree");
         Car xpander = new Car(4, "1.5-liter DOHC 16-valve Inline-4 MIVEC", 45, 21.01, "Xpander", 7);
-        System.out.println(xpander.getGas());
+        System.out.println("Gas before making the trip: " + xpander.getGas());
         budz.travel(xpander);
-        System.out.println(xpander.getGas());
+        System.out.println("Gas after making the trip, if the trip was made: " + xpander.getGas());
 
     }
 

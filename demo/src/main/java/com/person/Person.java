@@ -39,17 +39,25 @@ public class Person {
     this.location = destination;
     // Set the travel_vehicle to the name of the Vehicle used
     this.travelVehicle = vehicle.getVehicleName();
-    // Deduct the vehicle’s gas with the gas used.
+    // Calculate to be used gas for the trip then deduct the vehicle’s gas with the gas used.
     double remainingGas = calculateRemainingGas(vehicle, distance);
-    vehicle.setGas(remainingGas);
-    // Print → The person (first name last name) tavelled to (new location) using (vehicle_name)
-    System.out.println(this.firstName + " " + this.lastName + " travelled to " + this.location + " using " + this.travelVehicle);
+    // Condition to make trip or not
+    if (remainingGas > 0) {
+      vehicle.setGas(remainingGas);
+      // Print → The person (first name last name) tavelled to (new location) using (vehicle_name)
+      System.out.println(this.firstName + " " + this.lastName + " travelled to " + this.location + " using " + this.travelVehicle);
+    } else {
+      System.out.println("Destination too far. Insufficient gas.");
+    }
     sc.close();
   }
 
   public double calculateRemainingGas(Vehicle vehicle, double distance) {
     double gasUsed = distance / vehicle.getGasConsumption();
-    double remainingGas = vehicle.getGas() - gasUsed;
+    double remainingGas = 0;
+    if (vehicle.getGas() > gasUsed) {
+      remainingGas = vehicle.getGas() - gasUsed;
+    }
     return remainingGas;
   }
 
