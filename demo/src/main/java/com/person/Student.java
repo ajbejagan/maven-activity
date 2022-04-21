@@ -4,8 +4,8 @@ public class Student extends Person {
   
   private String year;
 
-  public Student(String firstname, String lastname, int age, String year) {
-    super(firstname, lastname, age);
+  public Student(String firstname, String lastname, int age, String location, String year) {
+    super(firstname, lastname, age, location);
     this.year = year;
   }
 

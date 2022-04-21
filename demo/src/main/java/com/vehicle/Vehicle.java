@@ -4,6 +4,10 @@ public class Vehicle {
 
   private int numberOfWheels;
   private String engine;
+  // activity 2
+  private double gas;
+  private double gasConsumption;
+  private String vehicleName;
 
   public Vehicle(int numberOfWheels, String engine) {
     this.numberOfWheels = numberOfWheels;
@@ -24,6 +28,30 @@ public class Vehicle {
 
   public void setEngine(String engine) {
     this.engine = engine;
+  }
+
+  public double getGas() {
+    return gas;
+  }
+
+  public void setGas(double gas) {
+    this.gas = gas;
+  }
+
+  public double getGasConsumption() {
+    return gasConsumption;
+  }
+
+  public void setGasConsumption(double gasConsumption) {
+    this.gasConsumption = gasConsumption;
+  }
+
+  public String getVehicleName() {
+    return vehicleName;
+  }
+
+  public void setVehicleName(String vehicleName) {
+    this.vehicleName = vehicleName;
   }
 
 }

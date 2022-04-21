@@ -4,8 +4,8 @@ public class Teacher extends Person {
 
   private String degreeLevel;
 
-  public Teacher(String firstName, String lastName, int age, String degreeLevel) {
-    super(firstName, lastName, age);
+  public Teacher(String firstName, String lastName, int age, String location, String degreeLevel) {
+    super(firstName, lastName, age, location);
     this.degreeLevel = degreeLevel;
   }
 

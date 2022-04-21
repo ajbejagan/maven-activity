@@ -14,6 +14,8 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
+
+        // activity 1
         
         Student aryen = new Student("Aryen", "Bejagan", 17, "First year");
         Teacher jim = new Teacher("Jim", "Bejagan", 24, "Masters degree");
@@ -26,6 +28,10 @@ public final class App {
 
         displaySpecs("Camry", camry.getNumberOfWheels(), camry.getEngine(), "Storage capacity", camry.getStorageCapacity());
         displaySpecs("Vespa S 125", vespa.getNumberOfWheels(), vespa.getEngine(), "Wheelie power", vespa.getWheeliePower());
+
+        // activity 2
+
+        
 
     }
 
